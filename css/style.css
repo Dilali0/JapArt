@@ -1,18 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap');
+
 :root{
     --PrimaryColor: #333333 ;
     --SecondColor : #C4122C ;
     --ThirdColor : #FAFAFA;
     --Bar : 72px ;
 }
-
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "Shippori Mincho", serif;
+    font-style: normal;
 }
-body{
-    font-family: 'Montserrat';
-}
+ 
 Header{
     background-color: #333333;
     color: var(--ThirdColor);
@@ -35,6 +37,7 @@ Header{
     align-content: flex-start;
     padding-inline: 0px;   
     font-size: 18px;
+    gap: 20px ;
 }
 
 nav .logo h1{
@@ -81,14 +84,15 @@ nav .lists ul li:hover::after{
     width: 100%;
 }
 
-/* main */
+/* main home */
+/****************************************************************************************************************/
 main{
     font-family: 'Montserrat';
 }
 /*  hero section */ 
 .hero {
-    height: 80vh;
-    background-image: url('images/autumn-1.webp');
+    height: 400px;
+    background-image: url('../images/autumn-1.webp');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -142,15 +146,12 @@ section#collection {
 
 #collection p {
     font-size: 18px;
-    color: #555;
     margin-bottom: 30px;
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
     word-spacing: 6px; /* Adjust this value as needed */
-
     line-height: 30px;
-
 }
 
 .art-grid {
@@ -159,6 +160,17 @@ section#collection {
     justify-content: center;
     gap: 50px;
 }
+/**************************/
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
 
 .art-item {
     width: 280px;
@@ -167,7 +179,39 @@ section#collection {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
+.art-item-back {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    width: 100%;
+    height: 100%;
+    background-color: var(--SecondColor);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.6s;
+    position: absolute;
+    transform: rotateY(180deg);
+    color: var(--ThirdColor);
+    top: 0px;
+    padding-top: 60px;
+}
+.art-item-back p {
+    color: var(--ThirdColor);
+}
+
+/*  */
+
+
+  .paint:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+
 
 .art-item img {
     width: 100%;
@@ -179,6 +223,7 @@ section#collection {
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
+/**********************/
 
 #show-more {
     margin-top: 30px;
@@ -199,22 +244,19 @@ section#collection {
    background-color: #e98796;
 }
 /* end Gallery section */
-
 /* footer */ 
 footer {
-    background-color:var(--PrimaryColor) ;
+    background-color: var(--PrimaryColor) ;
     color: var(--ThirdColor);
-    padding: 30px 0;
-    font-family: 'Montserrat';
+    padding: 40px 0;
 }
-
 .footer-content {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
+    /* gap: 300px; */
+    justify-content: center;
+    flex-direction: row-reverse;
 }
-
 .footer-section {
     flex: 1;
     padding: 20px;
@@ -226,7 +268,7 @@ footer {
 }
 
 .footer-section p {
-    color: #ffffff;
+    color: var(--ThirdColor);
     font-size: 1em;
     line-height: 1.6;
 }
@@ -242,6 +284,17 @@ footer p {
     font-size: 0.9em;
 }
 
+.imgbg{
+    background: url(./images/autumn-1.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100% ;
+  }
 
 /* end footer */ 
 

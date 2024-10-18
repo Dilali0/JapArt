@@ -1,0 +1,38 @@
+:root{
+  --PrimaryColor: #333333 ;
+  --SecondColor : #C4122C ;
+  --ThirdColor : #FAFAFA;
+  --Bar : 72px ;
+}
+.SectionAbout{
+  /* height: 100vh; */
+}
+.SectionInfo{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  height: 100%;
+}
+.SectionInfo .Title{
+  text-align: center;
+}
+.SectionInfo .Title h1{
+   color: var(--SecondColor);
+   font-size: 28px;
+   margin-bottom: 10px;
+}
+.SectionInfo .Title p{
+   color: var(--PrimaryColor) ;
+   font-size: 18px;
+    margin-bottom: 30px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 30px;
+}
+
+
+

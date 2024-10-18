@@ -3,11 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+   <meta name="description" content="Explore high-quality Japanese painting. Find your inspiration with our wide selection of unique art pieces.">
+
+    <title>JapArt</title>  
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/all.min.css">
-    <title>JapArt</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+   
+  
 </head>
 <body>
     <header>
@@ -20,6 +27,7 @@
                     <ul>
                         <li><a href="./index.html">Home</a></li>
                         <li><a href="./Gallery.html">Gallery</a></li>
+                        <li><a href="./Detail.html">Details</a></li>
                         <li><a href="./About.html">About</a></li>
                         <li><a href="./Contact.html">Contact</a></li>
                     </ul>
@@ -27,49 +35,102 @@
             </nav>
         </div>
     </header>
-    
-    <main>
+
         <section id="home" class="hero">
             <div class="container">
                  <div class="hero-content">
                       <h2>Timeless Beauty of Japanese Art</h2>
                       <p>Explore authentic artworks that blend tradition with modern aesthetics.</p>
-                      <a href="#collection" class="btn">Explore Collection</a>
+                      <a href="./Gallery.html" class="btn">Explore Collection</a>
                  </div>
             </div>
         </section>
         <section id="collection" class="gallery">
             <div class="container">
-                <h2>Our Collection</h2>
-            <p>Explore a curated selection of stunning artworks that capture the essence of creativity and imagination. Each piece in our collection showcases unique artistic styles and themes, offering a window into the world of contemporary art.</p>
+            <h2>Our Collection</h2>
+            <p>Japanese Paintings and Art Online.</p>
             
             <div class="art-grid">
-                <div class="art-item">
-                    <img src="images/Coll1.jpeg" alt="Art 1">
+                 <div class="paint">
+                    <div class="flip-card-inner">
+                        <div class="art-item">
+                            <img src="images/Coll1.jpeg" alt="Art 1">
+                        </div>
+                        <div class="art-item-back">
+                            <h1>Hokusai Katsushika</h1> 
+                            <p>Poem by Abe no Nakamaro</p> 
+                            <p>3000$</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="art-item">
-                    <img src="images/coll2.webp" alt="Art 2">
+                  
+                <div class="paint">
+                    <div class="flip-card-inner">
+                        <div class="art-item">
+                            <img src="images/coll2.webp" alt="Art 2">
+                        </div>
+                        <div class="art-item-back">
+                            <h1>Hokusai Katsushika</h1> 
+                            <p>Poem by Abe no Nakamaro</p> 
+                            <p>3000$</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="art-item">
-                    <img src="images/coll3.webp" alt="Art 3">               
+                <div class="paint">
+                    <div class="flip-card-inner">
+                        <div class="art-item">
+                            <img src="images/coll3.webp" alt="Art 3">
+                        </div>
+                        <div class="art-item-back">
+                            <h1>Hokusai Katsushika</h1> 
+                            <p>Poem by Abe no Nakamaro</p> 
+                            <p>3000$</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="art-item">
-                    <img src="images/coll4.webp" alt="Art 4">
+                <div class="paint">
+                    <div class="flip-card-inner">
+                        <div class="art-item">
+                            <img src="images/coll4.webp" alt="Art 4">
+                        </div>
+                        <div class="art-item-back">
+                            <h1>Hokusai Katsushika</h1> 
+                            <p>Poem by Abe no Nakamaro</p> 
+                            <p>3000$</p>
+                        </div>
+                    </div>
                 </div>
-    
-                <div class="art-item">
-                    <img src="images/coll5.webp" alt="Art 5">
+                <div class="paint">
+                    <div class="flip-card-inner">
+                        <div class="art-item">
+                            <img src="images/coll5.webp" alt="Art 5">
+                        </div>
+                        <div class="art-item-back">
+                            <h1>Hokusai Katsushika</h1> 
+                            <p>Poem by Abe no Nakamaro</p> 
+                            <p>3000$</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="art-item">
-                    <img src="images/coll6.webp" alt="Art 6">
+                <div class="paint">
+                    <div class="flip-card-inner">
+                        <div class="art-item">
+                            <img src="images/coll6.webp" alt="Art 6">
+                        </div>
+                        <div class="art-item-back">
+                            <h1>Hokusai Katsushika</h1> 
+                            <p>Poem by Abe no Nakamaro</p> 
+                            <p>3000$</p>
+                        </div>
+                    </div>
                 </div>
+                  
             </div>
             <div id="show-more">
-                <button>Show More</button>
+                <a href="./Gallery.html" class="btn">Show more</a>
             </div>
             </div>
         </section>
-    </main>
         <!-- Footer -->
         <footer>
             <div class="container">
@@ -78,7 +139,7 @@
                         <h3>About Us</h3>
                         <p>We are passionate about bringing the finest Japanese art to the world. Our collection includes prints, paintings, and calligraphy from renowned artists.</p>
                     </div>
-    
+          
                     <div class="footer-section contact">
                         <h3>Contact Us</h3>
                         <p>Email: info@japaneseartgallery.com</p>
@@ -89,7 +150,7 @@
                     <p>&copy; 2024 Our Website. All Rights Reserved.</p>
                 </div>
             </div>
-        </footer>
+          </footer>
     
 </body>
 </html>
